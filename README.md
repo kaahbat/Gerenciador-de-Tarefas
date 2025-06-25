@@ -1,10 +1,37 @@
 # Gerenciador de Tarefas - React + Vite
 
-Este projeto é um gerenciador de tarefas desenvolvido com React e Vite, proporcionando um ambiente moderno, rápido e eficiente para o desenvolvimento front-end. O setup inclui Hot Module Replacement (HMR) para uma experiência de desenvolvimento mais fluida, além de regras básicas de ESLint para manter a qualidade do código.
+Este projeto é um **Gerenciador de Tarefas** desenvolvido com **React** e **Vite**, proporcionando uma estrutura moderna, rápida e prática para o desenvolvimento de interfaces front‑end.
 
-Plugins oficiais utilizados:
+Ele foi desenvolvido como parte de um **curso de React**, com o objetivo de praticar e aplicar conceitos básicos e avançados do framework.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md): utiliza [Babel](https://babeljs.io/) para Fast Refresh.
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc): utiliza [SWC](https://swc.rs/) para Fast Refresh.
+## ⚡️ Tecnologias Utilizadas
 
-Ideal para quem busca iniciar rapidamente projetos React com as melhores práticas e ferramentas modernas.
+- **React** — para construir a interface do usuário.
+- **Vite** — para inicialização e build do projeto.
+- **JavaScript / JSX** — para lógica e estrutura do app.
+- **CSS** — para estilização e layout.
+
+## ✅ Funcionalidades
+
+- Adição de novas tarefas
+- Marcação de tarefas como concluídas
+- Exclusão de tarefas
+
+## 🚀 Instalação e Execução
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/kaahbat/Gerenciador-de-Tarefas.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Rode o projeto:
+   ```bash
+   npm run dev
+   ```
+
+## 🏁 Resultado
+
+Um simples e funcional **Gerenciador de Tarefas**, ideal para quem quer aprender e praticar com **React + Vite**.
