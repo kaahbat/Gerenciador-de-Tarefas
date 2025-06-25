@@ -36,6 +36,10 @@ Ele foi desenvolvido como parte de um **curso de React**, com o objetivo de prat
 
 👉 [Gerenciador de Tarefas Online](https://gerenciador-de-tarefas-r41w.vercel.app/)
 
+## 🖼️ Screenshot
+
+![Screenshot do Gerenciador de Tarefas](public/screenshot.png)
+
 ## 🏁 Resultado
 
 Um simples e funcional **Gerenciador de Tarefas**, ideal para quem quer aprender e praticar com **React + Vite**.
