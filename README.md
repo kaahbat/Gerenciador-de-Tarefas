@@ -21,7 +21,7 @@ Ele foi desenvolvido como parte de um **curso de React**, com o objetivo de prat
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/kaahbat/Gerenciador-de-Tarefas.git
+   git clone https://github.com/seu-usuario/gerenciador-tarefas.git
    ```
 2. Instale as dependências:
    ```bash
@@ -31,6 +31,10 @@ Ele foi desenvolvido como parte de um **curso de React**, com o objetivo de prat
    ```bash
    npm run dev
    ```
+
+## 🌐 Acesse o App
+
+👉 [Gerenciador de Tarefas Online](https://gerenciador-de-tarefas-r41w.vercel.app/)
 
 ## 🏁 Resultado
 
