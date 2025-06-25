@@ -1,7 +1,16 @@
 import { ChevronRightCircleIcon, TrashIcon } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
+import Button from "./Button";
 function Tasks(props) {
   console.log(props);
+  const navigate = useNavigate();
+  function onSeeDetalhesClick(task) {
+    const query = new URLSearchParams();
+    query.set("title", task.title);
+    query.set("description", task.description);
+
+    navigate(`/task?title=${task.title}&description=${task.description}`);
+  }
   return (
     <ul className="space-y-4 p-6 bg-slate-200 rounded-md shadow ">
       {props.tasks.map((task) => (
@@ -14,15 +23,12 @@ function Tasks(props) {
           >
             {task.title}
           </button>
-          <button className="bg-slate-400 p-2 rounded-md text-white">
+          <Button onClick={() => onSeeDetalhesClick(task)}>
             <ChevronRightCircleIcon />
-          </button>
-          <button
-            onClick={() => props.deleteTaskClick(task.id)}
-            className="bg-slate-400 p-2 rounded-md text-white"
-          >
+          </Button>
+          <Button onClick={() => props.deleteTaskClick(task.id)}>
             <TrashIcon />
-          </button>
+          </Button>
         </li>
       ))}
     </ul>

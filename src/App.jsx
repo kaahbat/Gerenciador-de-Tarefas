@@ -1,29 +1,29 @@
 import AddTask from "./components/AddTask";
 import Tasks from "./components/tasks";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      title: "Tarefa 1",
-      description: "Descrição da tarefa 1",
-      isCompleted: false,
-    },
-    {
-      id: 2,
-      title: "Tarefa 2",
-      description: "Descrição da tarefa 2",
-      isCompleted: false,
-    },
-    {
-      id: 3,
-      title: "Tarefa 3",
-      description: "Descrição da tarefa 3",
-      isCompleted: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  /*
+  useEffect(() => {
+    async function fatchTasks() {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos?_limit=10",
+        { method: "GET" }
+      );
+      const data = await response.json();
+      setTasks(data);
+    }
+    fatchTasks();
+  });
+  */
   function onTaskClick(idTask) {
     const newTask = tasks.map((task) => {
       if (task.id === idTask) {
